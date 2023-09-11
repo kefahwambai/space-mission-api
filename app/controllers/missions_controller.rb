@@ -46,6 +46,6 @@ class MissionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def mission_params
-      params.require(:mission).permit(:name, :scientist_id, :planet_id)
+      params.permit(:name, :scientist_id, :planet_id)
     end
 end

@@ -1,3 +1,5 @@
 class ScientistSerializer < ActiveModel::Serializer
-  attributes :id, :name, :field_of_study, :avatar
+  attributes :name, :field_of_study, :avatar, :mission
+  has_one :mission
+  
 end

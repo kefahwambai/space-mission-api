@@ -46,6 +46,6 @@ class ScientistsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def scientist_params
-      params.require(:scientist).permit(:name, :field_of_study, :avatar)
+      params.permit(:name, :field_of_study, :avatar)
     end
 end
